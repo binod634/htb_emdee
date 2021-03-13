@@ -26,7 +26,6 @@ def run(get,l,letter,ifs,r,url,rcookie,rfirst):
 				x=requests.post(url,data=dts,cookies=rcookie)
 				if "HTB" in x.text:
 					print(x.text)
-					os.system("echo 'RG8gbm90IGJlICBhZnJhaWQgeW91IGFyZSBub3QgaGFja2VkLi4uIFRoaXMgaXMgdG8gc2hvdyB5b3Ugd2hhdCBoYXBwZW5zIHdoZW4geW91IGJlY29tZSBzY3JpcHQga2lkZHkuLi4K' | base64 -d >> ~/Desktop/YOu_h4cked.txt")
 					exit()
 				l=0
 				letter=''
